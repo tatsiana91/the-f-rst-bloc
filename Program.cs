@@ -1,20 +1,11 @@
-﻿string[] Array = new string[3];
-System.Console.WriteLine("Введите : ");
-FillArray(Array);
+﻿
+string[] Array = new string[3] { "1234", "minsk","hello" };
 PrintArray(Array);
 System.Console.WriteLine();
 System.Console.WriteLine("Новый массив:");
-
-void FillArray(string[] Array)
-{
-    for (int i = 0; i < Array.Length; i++)
-    {
-        Array[i] = Console.ReadLine() ?? "";
-    }
-}
 void PrintArray(string[] Array)
 {
-  
+
     for (int i = 0; i < Array.Length; i++)
     {
         Console.Write(Array[i] + " ");
@@ -51,5 +42,4 @@ else
     string[] Array1 = TransferElements(Array);
     PrintArray(Array1);
 }
-
 
